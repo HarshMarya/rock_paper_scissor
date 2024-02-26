@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=Montserrat:wght@300;400&family=Mulish:wght@300;400;700&family=Nunito+Sans:opsz@6..12&family=Nunito:wght@300&family=Pacifico&family=Poppins:wght@300;400;700;900&family=Roboto:wght@300;400;700&family=Satisfy&family=Young+Serif&display=swap");
+
+:root{
+    --bg-color: #016A70;
+    --header-text-color:#016A70;
+    --header-bg:#eeeeee;
+
+}
+
+* {
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+header {
+  background-color: var(--header-bg);
+  text-align: center;
+  padding: 10px 0;
+}
+
+header > h1 {
+  color: var(--header-text-color);
+}
+.score-board {
+  border: 3px solid white;
+  width: 40%;
+  margin: 50px auto;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 6px;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.user-badge {
+  padding: 0 10px;
+  position: absolute;
+  top: 30%;
+  left: 95%;
+  background-color: #fff;
+  color: var(--header-text-color);
+  border-radius: 6px;
+}
+
+.comp-badge {
+  padding: 0 10px;
+  position: absolute;
+  top: 30%;
+  right: 95%;
+  background-color: #fff;
+  color: var(--header-text-color);
+  border-radius: 6px;
+}
+
+.result {
+  color: var(--header-text-color);
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--header-bg);
+  width: 30%;
+  margin: auto;
+  border-radius: 6px;
+  padding: 10px 0;
+  height: auto;
+}
+
+/* .result>p{
+} */
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.win-message {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  margin: 0 30px;
+}
+
+/* .pointer::after{
+    transform: scale(0.98);
+    box-shadow: 0 2px 2px 5px rgba(0,0,0,0.5);
+} */
+
+.pointer:hover {
+  width: 180px;
+}
+
+.win-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
